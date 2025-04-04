@@ -1,0 +1,98 @@
+.section-contact h1 {
+  font-size: 26px;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.section-contact h3 {
+  font-size: 30px;
+  font-weight: 100;
+  color: var(--text-color);
+}
+
+.section-contact p {
+  font-size: 21px;
+  font-weight: 300;
+  color: var(--text-color);
+}
+
+.container-contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  gap: 20px;
+}
+
+.container-contato p {
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--text-color);
+}
+
+.textos-contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.textos-contato h3 {
+  font-size: 32px;
+  font-weight: 300;
+  color: var(--text-color);
+}
+
+.textos-contato p {
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--text-color);
+}
+
+.opcoes-contato {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100vw;
+}
+
+.email,
+.telefone,
+.linkedin,
+.instagram {
+  width: 90px;
+  height: 90px;
+  border: 1px solid var(--primary-color);
+  border-radius: 50px;
+  background-color: var(--background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.email a,
+.telefone a,
+.linkedin a,
+.instagram a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: var(--primary-color);
+}
+
+.email:hover,
+.telefone:hover,
+.linkedin:hover,
+.instagram:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}

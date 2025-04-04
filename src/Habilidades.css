@@ -1,0 +1,89 @@
+.section-habilidades {
+  font-family: "Poppins", serif;
+  padding: 20px 0;
+}
+
+.section-habilidades h2 {
+  font-size: 32px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: var(--text-color);
+}
+
+.section-habilidades h3 {
+  color: var(--primary-color);
+  font-size: 28px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.section-habilidades h1 {
+  font-size: 32px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.section-habilidades p {
+  font-size: 26px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+.section-habilidades .container {
+  display: flex;
+  width: 700px;
+  height: 400px;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.section-habilidades .linguagens,
+.section-habilidades .habilidades {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-habilidades .linguagem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 8px;
+}
+
+.section-habilidades .pontos {
+  display: flex;
+  gap: 7px;
+}
+
+.section-habilidades .ponto {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  opacity: 0.3;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-habilidades .ponto.forte {
+  opacity: 1;
+}
+
+.section-habilidades .ponto.forte:hover,
+.section-habilidades .ponto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(125, 95, 129, 0.5);
+}
+
+.section-habilidades .habilidades ul {
+  list-style: none;
+  padding: 0;
+}
+
+.section-habilidades .habilidades li {
+  margin-bottom: 12px;
+  font-size: 25px;
+  color: var(--text-color);
+}
