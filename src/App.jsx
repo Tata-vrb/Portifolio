@@ -212,7 +212,7 @@ function App() {
 
         <section id="section-projects" className="section-projects">
           <h3>Portfolio</h3>
-          <br />
+
           <div className="container-projects">
             <div className="box">
               <div className="box-projec">

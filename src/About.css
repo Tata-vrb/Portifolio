@@ -1,11 +1,12 @@
 .image-eu {
   width: 190px;
   height: 190px;
+  object-fit: cover; /* Garante que a imagem se ajuste ao tamanho sem distorcer */
 }
 
 .container-about {
   width: 90%;
-  height: 80%;
+  height: auto; /* Ajusta a altura para se adaptar ao conteúdo */
   gap: 25px;
   padding: 20px;
   display: flex;
@@ -36,10 +37,41 @@
 
 .descricao-about {
   width: 80%;
-  height: 60%;
+  height: auto; /* Ajusta a altura para não ultrapassar o tamanho da tela */
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   gap: 90px;
   padding: 20px;
+  flex-wrap: wrap; /* Permite que os itens se ajustem em várias linhas */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .image-eu {
+    width: 150px;
+    height: 150px; /* Ajusta o tamanho da imagem em telas menores */
+  }
+
+  .container-about {
+    padding: 10px; /* Ajusta o padding para não sobrecarregar a tela */
+  }
+
+  .container-about h2 {
+    font-size: 24px; /* Diminui o tamanho da fonte em telas menores */
+  }
+
+  .container-about h3 {
+    font-size: 22px; /* Diminui o tamanho da fonte em telas menores */
+  }
+
+  .container-about p {
+    font-size: 18px; /* Diminui o tamanho da fonte em telas menores */
+  }
+
+  .descricao-about {
+    width: 100%; /* Faz a descrição ocupar toda a largura disponível */
+    gap: 20px; /* Ajusta o espaçamento entre os itens */
+    flex-direction: column; /* Alinha os itens em coluna em telas menores */
+  }
 }

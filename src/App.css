@@ -22,9 +22,32 @@
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Definindo espaçamento entre as seções */
+section {
+  padding: 60px 20px;
+  margin-bottom: 20px; /* Adiciona espaço entre as seções */
+  min-height: 100vh; /* Garantir que cada seção tenha pelo menos a altura da tela */
+}
+
+/* Ajustes de padding e margin, conforme necessário */
+.container-main,
+.container-about,
+.container-projects,
+.container-contato {
+  padding: 20px;
+}
+
+/* Adicionando um espaçamento geral para separar o conteúdo */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
 body {
   background-color: var(--background-color);
   color: var(--text-color);
+  font-family: "Poppins", sans-serif;
 }
 
 .section-main,
@@ -32,10 +55,11 @@ body {
 .section-projects,
 .section-contact,
 .section-habilidades {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: auto; /* Ajusta a altura para não ultrapassar a tela */
   background-color: var(--background-color);
   color: var(--text-color);
+  padding: 20px; /* Adiciona padding para espaçamento */
 }
 
 .section-main {
@@ -79,4 +103,28 @@ body {
   height: 90vh;
   justify-content: space-around;
   font-family: "Poppins", serif;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .section-main,
+  .section-about,
+  .section-projects,
+  .section-habilidades,
+  .section-contact {
+    padding: 10px; /* Ajusta o padding em telas menores */
+  }
+
+  .section-main {
+    flex-direction: column; /* Garante que as seções fiquem em coluna em telas pequenas */
+  }
+
+  .section-projects,
+  .section-habilidades {
+    gap: 15px; /* Aumenta o espaçamento entre os itens em telas menores */
+  }
+
+  body {
+    font-size: 14px; /* Diminui o tamanho da fonte em telas pequenas */
+  }
 }
